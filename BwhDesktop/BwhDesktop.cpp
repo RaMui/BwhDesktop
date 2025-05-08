@@ -52,7 +52,6 @@ BwhDesktop::BwhDesktop(QWidget* parent)
 		}
 	}
 	connect(manager, &QNetworkAccessManager::finished, this, &BwhDesktop::loadData);
-	//connect(netManager, &QNetworkAccessManager::finished, this, &BwhDesktop::titleChange);
 	connect(netManager, &QNetworkAccessManager::finished, this, [=]() {
 		QTimer::singleShot(3000, this, [=]() {
 			titleChange();
@@ -181,6 +180,9 @@ void BwhDesktop::loadDataJson(QJsonObject& jsonObject)
 }
 
 void BwhDesktop::titleChange() {
+	if (configList.isEmpty()) {
+		return;
+	}
 	int selectedIndex = ui.vps_title_comboBox->currentIndex();
 	vpsUrl = QString("%1getLiveServiceInfo?veid=%2&api_key=%3").arg(host).arg(configList.at(selectedIndex).getVeid()).arg(configList.at(selectedIndex).getApiKey());
 	QNetworkRequest res(vpsUrl);

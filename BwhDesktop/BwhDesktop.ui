@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="BwhDesktop.qrc">
-    <normaloff>:/BwhDesktop/C:/Users/iramui/Desktop/log.png</normaloff>:/BwhDesktop/C:/Users/iramui/Desktop/log.png</iconset>
+    <normaloff>:/BwhDesktop/BwhDesktop.ico</normaloff>:/BwhDesktop/BwhDesktop.ico</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QWidget" name="vps_title_widget" native="true">

@@ -120,9 +120,16 @@
     <QtMoc Include="EditConfig.h" />
     <QtMoc Include="CheckBoxHeader.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
     <ClInclude Include="VpsInfo.h" />
     <QtMoc Include="VpsTableModel.h" />
     <ClInclude Include="Vps.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BwhDesktop.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\iramui\Desktop\BwhDesktop.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
