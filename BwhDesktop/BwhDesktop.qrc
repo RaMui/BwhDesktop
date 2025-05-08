@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/BwhDesktop">
+        <file>log.png</file>
+    </qresource>
+</RCC>
