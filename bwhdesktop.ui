@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>BwhDesktopClass</class>
- <widget class="QMainWindow" name="BwhDesktopClass">
+ <class>BwhDesktop</class>
+ <widget class="QMainWindow" name="BwhDesktop">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>762</width>
-    <height>745</height>
+    <width>770</width>
+    <height>748</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>BwhDesktop</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="BwhDesktop.qrc">
-    <normaloff>:/BwhDesktop/BwhDesktop.ico</normaloff>:/BwhDesktop/BwhDesktop.ico</iconset>
+   <iconset resource="bwhdesktop.qrc">
+    <normaloff>:/icons/BwhDesktop.ico</normaloff>:/icons/BwhDesktop.ico</iconset>
   </property>
-  <widget class="QWidget" name="centralWidget">
+  <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="vps_title_widget" native="true">
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>10</y>
+      <y>20</y>
       <width>681</width>
       <height>41</height>
      </rect>
@@ -74,7 +74,7 @@
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>50</y>
+      <y>60</y>
       <width>601</width>
       <height>611</height>
      </rect>
@@ -416,41 +416,27 @@
     </layout>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menuBar">
+  <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>762</width>
-     <height>33</height>
+     <width>770</width>
+     <height>21</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menu">
+   <widget class="QMenu" name="menuconfig">
     <property name="title">
      <string>config</string>
     </property>
-    <addaction name="config_create"/>
-    <addaction name="config_edit"/>
     <addaction name="config_import"/>
     <addaction name="config_export"/>
+    <addaction name="config_create"/>
+    <addaction name="config_edit"/>
    </widget>
-   <widget class="QMenu" name="menuabout">
-    <property name="title">
-     <string>about</string>
-    </property>
-   </widget>
-   <addaction name="menu"/>
-   <addaction name="menuabout"/>
+   <addaction name="menuconfig"/>
   </widget>
-  <widget class="QToolBar" name="mainToolBar">
-   <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
-  </widget>
-  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QStatusBar" name="statusbar"/>
   <action name="config_import">
    <property name="text">
     <string>import</string>
@@ -472,9 +458,8 @@
    </property>
   </action>
  </widget>
- <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="BwhDesktop.qrc"/>
+  <include location="bwhdesktop.qrc"/>
  </resources>
  <connections/>
 </ui>
